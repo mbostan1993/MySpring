@@ -26,6 +26,7 @@ public class MyController {
     @RequestMapping(value = "/students", method = RequestMethod.GET)
     public ResponseEntity<List<Student>> listAllStudent() {
 
+        System.out.println("Hello test git");
         List<Student> students = studentService.getAllStudent();
 
         if (students.isEmpty()){
